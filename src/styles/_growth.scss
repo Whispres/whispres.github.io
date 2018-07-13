@@ -1,0 +1,132 @@
+#growth {
+  width: 90%;
+  margin: 0 auto;
+  max-width: 960px;
+  @media only screen and (min-width: $cut) {
+    width: 80%;
+  }
+}
+
+@import url(https://fonts.googleapis.com/css?family=Lato);
+html, body{
+	height: 100%;
+	position: relative;
+	overflow: scroll;
+}
+h1{
+	position: absolute;
+	top: 5px;
+	left: 50%;
+	-webkit-transform: translate(-50%, -50%);
+	-ms-transform: translate(-50%, -50%);
+	-o-transform: translate(-50%,-50%);
+	-moz-transform: translate(-50%,-50%);
+	transform: translate(-50%, -50%);
+	font-size: 1.7rem;
+	font-family: "Lato";
+	text-shadow: 0 1px 1px rgba(0, 0, 0, 0.1);
+	line-height: 1.2;
+	color: #fff;
+	z-index: 2;
+}
+
+content{
+position: absolute;
+	top: 15px;
+	left: 50%;
+	-webkit-transform: translate(-50%, -50%);
+	-ms-transform: translate(-50%, -50%);
+	-o-transform: translate(-50%,-50%);
+	-moz-transform: translate(-50%,-50%);
+	transform: translate(-50%, -50%);
+	font-size: 1.7rem;
+	font-family: "Lato";
+	text-shadow: 0 1px 1px rgba(0, 0, 0, 0.1);
+	line-height: 1.2;
+	color: #fff;
+	z-index: 2;
+}
+div{
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	-webkit-transition: -webkit-transform 0.4s ease;
+	-ms-transition: -ms-transform 0.4s ease;
+	-o-transition: -o-transform 0.4s ease;
+	-moz-transition: -moz-transform 0.4s ease;
+	transition: -webkit-transform 0.4s ease;
+	transition: -ms-transform 0.4s ease;
+	transition: -o-transform 0.4s ease;
+	transition: -moz-transform 0.4s ease;
+	transition: transform 0.4s ease;
+	transition: transform 0.4s ease, -webkit-transform 0.4s ease;
+	transition: transform 0.4s ease, -ms-transform 0.4s ease;
+	transition: transform 0.4s ease, -o-transform 0.4s ease;
+	transition: transform 0.4s ease, -moz-transform 0.4s ease;
+	-webkit-transform: translateX(-100%);
+	-ms-transform: translateX(-100%);
+	-o-transform: translateX(-100%);
+	-moz-transform: translateX(-100%);
+	transform: translateX(-100%);
+}
+div:nth-of-type(1){
+	background-color: #a2666f;
+}
+div:nth-of-type(2){
+	background-color: #f49390;
+}
+div:nth-of-type(3){
+	background-color: #f45866;
+}
+div:nth-of-type(4){
+	background-color: #631a86;
+}
+input[type="radio"]{
+	position: absolute;
+	left: 0;
+	width: 10px;
+	height: 25%;
+	outline: 10px solid;
+	outline-offset: -10px;
+	margin: 0;
+	z-index: 1;
+	cursor: pointer;
+}
+input[type="radio"]:nth-of-type(1){
+	outline-color: #a2666f;
+	top: 0%;
+}
+input[type="radio"]:nth-of-type(2){
+	outline-color: #f49390;
+	top: 25%;
+}
+input[type="radio"]:nth-of-type(3){
+	outline-color: #f45866;
+	top: 50%;
+}
+input[type="radio"]:nth-of-type(4){
+	outline-color: #631a86;
+	top: 75%;
+}
+input[type="radio"]:checked + div{
+	-webkit-transform: translateX(0%);
+	-ms-transform: translateX(0%);
+	-o-transform: translateX(0%);
+	-moz-transform: translateX(0%);
+	transform: translateX(0%);
+	-webkit-transition: -webkit-transform 0.4s ease 0.4s;
+	-ms-transition: -ms-transform 0.4s ease 0.4s;
+	-o-transition: -o-transform 0.4s ease 0.4s;
+	-moz-transition: -moz-transform 0.4s ease 0.4s;
+	transition: -webkit-transform 0.4s ease 0.4s;
+	transition: -ms-transform 0.4s ease 0.4s;
+	transition: -o-transform 0.4s ease 0.4s;
+	transition: -moz-transform 0.4s ease 0.4s;
+	transition: transform 0.4s ease 0.4s;
+	transition: transform 0.4s ease 0.4s, -webkit-transform 0.4s ease 0.4s;
+	transition: transform 0.4s ease 0.4s, -ms-transform 0.4s ease 0.4s;
+	transition: transform 0.4s ease 0.4s, -o-transform 0.4s ease 0.4s;
+	transition: transform 0.4s ease 0.4s, -moz-transform 0.4s ease 0.4s;
+}

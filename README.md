@@ -1,4 +1,4 @@
-# Github Page Website for Whispres//R.E. Sprouse
+# Github Page Website for R.E. Sprouse // Whispres
 
 https://whispres.github.io/
 
@@ -16,3 +16,17 @@ This website is designed to showcase Whispres' professional development, and ski
     * Actual certifications from accredited institutions will be added here.
   * Include Extra certification section.
     * Extra certificates will be quasi official certificates from activity apps like SoloLearn.
+
+# Theme
+
+Modified from the original [Particle Jekyll Theme](https://github.com/nrandecker/particle).
+
+## License
+
+This theme is free and open source software, distributed under the The MIT License. So feel free to use this Jekyll theme anyway you want.
+
+## Credits
+
+This theme was partially designed with the inspiration from these fine folks
+- [Willian Justen](https://github.com/willianjusten/will-jekyll-template)
+- [Vincent Garreau](https://github.com/VincentGarreau/particles.js/)
