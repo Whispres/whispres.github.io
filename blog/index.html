@@ -1,0 +1,41 @@
+---
+layout: blog
+title: Blog
+---
+<h1 class="Latest-Posts-Title"> Latest Blog Posts </h1>
+
+<ul>
+  {% for post in site.posts %}
+  <div class="container">
+    <li>
+    <div class="post-preview">
+        <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">
+            <div class="post-title">
+              {{ post.title }}
+            </div>
+            <div class="post-subtitle">
+              {% if post.subtitle %}
+                {{ post.subtitle }}
+              {% endif %}
+            </div>
+        </a>
+    </div>
+    <div class="post-meta" style="margin-top:5px">
+      Posted by {{ post.author }} on {{ post.date | date: "%B %-d, %Y" }}
+    </div>
+    <div class="post-tags" style="margin-top:5px">
+      {% for tag in post.tags %}
+        <a class="tag-links" href="{{ site.baseurl }}/blog/tag.html#{{ tag | cgi_encode }}"
+          title="Other posts from the {{ tag | capitalize }} tag">
+              {{ tag | capitalize }}
+        </a>
+        {% unless forloop.last %}
+              &nbsp;
+        {% endunless %}
+      {% endfor %}
+    </div>
+    <hr>
+  </li>
+  </div>
+  {% endfor %}
+</ul>
