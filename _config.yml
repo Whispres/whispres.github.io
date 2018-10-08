@@ -15,7 +15,10 @@ linkedin:  sprouse-re
 
 #Plugins
 plugins:
-  - github-pages
+  - jekyll
+  - jekyll-feed
+  - jekyll-gist
+  - jekyll-mentions
   - jekyll-seo-tag
   - jekyll-sitemap
   - rouge
