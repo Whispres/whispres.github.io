@@ -1,21 +1,33 @@
 # Site settings
 title: R.E. Sprouse // Whispres
-description: My professional development and achievments.
 # baseurl: "/whispres" # the subpath of your site, e.g. /blog
 # url: "localhost:4000" # the base hostname & protocol for your site e.g. http://willianjusten.com.br
+repository: whispres.github.io
+local: en_US
 
 # User settings
 username: R.E. Sprouse
-user_description: Technical Communicator, Chemist, Analyst, GitHub Volunteer and Cat Enthusiast
-user_title: Technical Writer
+usertitle: Technical Writer
 email: sprouse.re@gmail.com
-twitter_username: Whisp_res
-github_username:  Whispres
-linkedin_username:  sprouse-re
+twitter: Whisp_res
+github:  Whispres
+linkedin:  sprouse-re
+
+#Plugins
+plugins:
+  - github-pages
+  - jekyll-seo-tag
+  - jekyll-sitemap
+  - rouge
 
 # Google-analytics
 google-analytics:
   id: "UA-122323788-1"
 
+markdown: kramdown
+highlighter: rouge
+sass:
+  sass_dir: _sass
+  style: compressed
+
 exclude: ['package.json', 'src' , 'node_modules']
-repository: whispres.github.io
