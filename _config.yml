@@ -3,6 +3,7 @@ title: R.E. Sprouse // Whispres
 # baseurl: "/whispres" # the subpath of your site, e.g. /blog
 # url: "localhost:4000" # the base hostname & protocol for your site e.g. http://willianjusten.com.br
 repository: whispres.github.io
+description: Personal and professional website for R.E. Sprouse // Whispres
 local: en_US
 
 # User settings
@@ -13,15 +14,11 @@ twitter: Whisp_res
 github:  Whispres
 linkedin:  sprouse-re
 
-#Plugins
+#Gems/Plugins
 plugins:
-  - jekyll
-  - jekyll-feed
-  - jekyll-gist
-  - jekyll-mentions
+  - github-pages
   - jekyll-seo-tag
   - jekyll-sitemap
-  - rouge
 
 # Google-analytics
 google-analytics:

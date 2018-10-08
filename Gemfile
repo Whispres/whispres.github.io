@@ -1,10 +1,6 @@
 source 'https://rubygems.org'
 
-gem 'jekyll'
-gem 'jekyll-feed'
-gem 'jekyll-gist'
-gem 'jekyll-mentions'
+gem 'github-pages', group: :jekyll_plugins
 gem 'jekyll-seo-tag'
 gem 'jekyll-sitemap'
-gem 'rouge'
 gem 'wdm'
