@@ -1,0 +1,16 @@
+<nav class="nav">
+  <ul class="navmenu">
+    {% for item in site.data.navigation %}
+    {% if item.url contains 'http' %}
+        {% assign domain = '' %}
+        {% else %}
+        {% assign domain = site.url %}
+    {% endif %}
+      <li class="navitem">
+        <a class="navlink" href="{{ domain }}{{ item.url }}">
+              {{ item.title }}
+        </a>
+      </li>
+    {% endfor %}
+  </ul>
+</nav>
