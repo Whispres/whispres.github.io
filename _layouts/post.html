@@ -1,0 +1,37 @@
+---
+layout: blog
+---
+<head>
+  {% feed_meta %}
+</head>
+<div class="container">
+  <h1 class="page-title">{{page.title}}</h1>
+
+  {% if page.subtitle %}
+    <h3>{{ page.subtitle }}</h3>
+  {% endif %}
+  <span>
+      <p>
+        {{page.date | date: "%B %-d, %Y" }} - {{page.author}}
+      </p>
+    <div class="indexed-posts">
+      <div class="tag-mark-list">
+        {% for tag in page.tags %}
+          <a class="tag-mark" href="/blog/tag/#{{ tag | slugify }}">
+            {{ tag }}
+          </a>
+          {% unless forloop.last %}
+            &nbsp;
+          {% endunless %}
+       {% endfor %}
+     </div>
+    </div>
+  </span>
+</div>
+<div class="post-container">
+<hr>
+
+{{content}}
+
+<hr>
+</div>
