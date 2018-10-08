@@ -1,0 +1,47 @@
+#particles-js {
+  background:#1a222c;
+  display:flex;
+  position:relative;
+  width:100%;
+  min-height:25vh;
+  background-repeat:no-repeat;
+  background-size:cover;
+  background-attachment:fixed;
+  .particles-js-canvas-el {
+    width:100%!important;
+    height:30vh!important;
+  }
+}
+
+.header {
+  z-index:1;
+  color:#fff;
+  position:absolute;
+  margin:0 auto;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  .site-title {
+    font-size: 50px;
+    text-align:center;
+    display:block;
+    line-height:1;
+    color: #fff;
+    @media only screen and (min-width:550px){
+      margin: 0;
+      font-size: 50px;
+    }
+  }
+  .site-description {
+    font-size:30px;
+    text-align:center;
+    display:block;
+    line-height:1;
+    color:#fff;
+    margin-top:8px;
+    @media only screen and (min-width:550px){
+      font-size:30px;
+    }
+  }
+}

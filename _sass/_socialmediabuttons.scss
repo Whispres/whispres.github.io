@@ -1,0 +1,37 @@
+ul.socialmedia {
+  z-index:1;
+  position:absolute;
+  margin-left:auto;
+  margin-right:auto;
+  color:#fff;
+  bottom:20%;
+  list-style:none;
+  bottom:20%;
+  color:#FFF;
+  list-style:none;
+  top: 66%;
+  left: 13%;
+  -webkit-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  }
+  li.socialmenu {
+      display:inline;
+      margin:5px;
+      a.button {
+        color:#FFF;
+        text-decoration:none;
+        font-size:20px;
+        transition:all .7s;
+          &:hover {
+            color:#1a222c;
+            background:#FFF;
+          }
+          &:active {
+            color:#1a222c;
+            background:#FFF;
+            @media only screen and (min-width:550px){
+            font-size:20px;
+            }
+          }
+        }
+      }

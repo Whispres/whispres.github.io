@@ -1,5 +1,5 @@
-#particles-js {
-  background: $main;
+#Home-particles-js {
+  background: #1a222c;
   display: flex;
   vertical-align: bottom;
   width: 100%;
@@ -13,10 +13,10 @@
   }
 }
 
-.header {
+.home-header {
   z-index: 1;
   text-align: center;
-  color:#FFF;
+  color:#fff;
   position: absolute;
   top: 50%;
   left: 50%;
@@ -27,8 +27,8 @@
     font-size: 50px;
     display: block;
     line-height: 1;
-    color: #FFF;
-    @media only screen and (min-width:$cut){
+    color: #fff;
+    @media only screen and (min-width:550px){
       margin: 0;
       font-size: 100px;
     }
@@ -37,28 +37,38 @@
     font-size: 20px;
     display: block;
     line-height: 1;
-    color: #FFF;
+    color: #fff;
     margin-top: 10px;
-    @media only screen and (min-width:$cut){
+    @media only screen and (min-width:550px){
       font-size: 40px;
     }
   }
 }
 
-.header-links {
+.home-header-links {
   margin: 10px;
   .link {
-    color: #FFF;
+    color: #fff;
     text-decoration: none;
     font-size: 15px;
     margin: 10px;
-    @media only screen and (min-width:$cut){
+    transition:all .7s;
+      &:hover {
+        color:#b0b0b0;
+      }
+      &:active {
+        color:#b0b0b0;
+        @media only screen and (min-width:550px){
+        font-size:20px;
+        }
+      }
+    @media only screen and (min-width:550px){
       font-size: 20px;
     }
   }
 }
 
-.header-icons {
+.home-header-icons {
   display: flex;
   justify-content: center;
   text-align: center;
@@ -74,14 +84,14 @@
     border: 2px solid #FFF;
     transition: all .7s;
     &:hover {
-      color: $main;
+      color: #1a222c;
       background: #FFF;
     }
     &:active {
-      color: $main;
+      color: #1a222c;
       background: #FFF;
     }
-    @media only screen and (min-width:$cut) {
+    @media only screen and (min-width:550px) {
       width: 35px;
       height: 35px;
       font-size: 35px;
@@ -113,10 +123,10 @@
       -webkit-animation: pulse 1.3s infinite;
       animation: pulse 1.3s infinite;
       &:hover {
-        color: $sec;
+        color: #4B5664;
       }
       &:active {
-        color: $sec;
+        color: #4B5664;
       }
   }
 }
