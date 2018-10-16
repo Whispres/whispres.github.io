@@ -1,7 +1,9 @@
 ---
-layout: blog
+layout: default
 title: Blog
 ---
+{% include nav-blog.html %}
+
 <h1 class="Latest-Posts-Title"> Latest Blog Posts </h1>
 
 <ul>
@@ -9,7 +11,7 @@ title: Blog
   <div class="container">
     <li>
     <div class="post-preview">
-        <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">
+        <a class="post-link" href="{{ post.url | prepend: site.url }}">
             <div class="post-title">
               {{ post.title }}
             </div>
@@ -25,7 +27,7 @@ title: Blog
     </div>
     <div class="post-tags" style="margin-top:5px">
       {% for tag in post.tags %}
-        <a class="tag-links" href="{{ site.baseurl }}/blog/tag.html#{{ tag | cgi_encode }}"
+        <a class="tag-links" href="{{ site.url }}/blog/tag.html#{{ tag | cgi_encode }}"
           title="Other posts from the {{ tag | capitalize }} tag">
               {{ tag | capitalize }}
         </a>

@@ -1,7 +1,7 @@
 # Site settings
 title: R.E. Sprouse // Whispres
-# baseurl: "/whispres" # the subpath of your site, e.g. /blog
-# url: "localhost:4000" # the base hostname & protocol for your site e.g. http://willianjusten.com.br
+# baseurl: "N/A
+# url: "localhost:4000" or "whispres.github.io"
 repository: whispres.github.io
 description: Personal and professional website for R.E. Sprouse // Whispres
 local: en_US
@@ -30,4 +30,4 @@ sass:
   sass_dir: _sass
   style: compressed
 
-exclude: ['package.json', 'src' , 'node_modules']
+exclude: ['package.json', 'node_modules']

@@ -7,17 +7,22 @@ ul.navmenu {
   color:#FFF;
   list-style:none;
   top: 66%;
-  left: 79%;
+  left:50%;
+  padding: 5px;
   -webkit-transform: translate(-50%, -50%);
   transform: translate(-50%, -50%);
-}
+  }
   li.navitem {
+    text-align: left;
     display:inline;
     margin:5px;
     a.navlink {
       color:#FFF;
       text-decoration:none;
-      font-size:20px;
+      font-size:15px;
+      @media only screen and (min-width:550px){
+        font-size:20px;
+        }
       transition:all .7s;
           &:hover {
             color:#1a222c;
@@ -27,7 +32,7 @@ ul.navmenu {
             color:#1a222c;
             background:#FFF;
             @media only screen and (min-width:550px){
-            font-size:20px;
+              color:inherit
             }
           }
         }
