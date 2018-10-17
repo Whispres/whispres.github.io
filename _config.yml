@@ -1,7 +1,7 @@
 # Site settings
 title: R.E. Sprouse // Whispres
 # baseurl: "N/A
-# url: "localhost:4000" or "whispres.github.io"
+url: https://whispres.github.io/
 repository: whispres.github.io
 description: Personal and professional website for R.E. Sprouse // Whispres
 local: en_US
