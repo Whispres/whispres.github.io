@@ -1,0 +1,23 @@
+---
+layout: default
+---
+<div class="container">
+<h1>{{ page.title }}</h1>
+
+  {% for pdf in site.static_files %}
+    {% if pdf.path contains page.pdf_name %}
+
+    <object data="{{ pdf.path | perpend: site.url }}" width="600" height="500">
+      <embed src="{{ pdf.path | perpend: site.url }}"  type="application/pdf" width="600px" height="500px"/>
+        <iframe src="{{ pdf.path | perpend: site.url }}" style="width:600px; height:500px;">
+          <p>This browser does not support PDFs. Please download the PDF to view it:
+            <a href="{{ pdf.path | perpend: site.url }}">Download PDF</a>.
+          </p>
+        </iframe>
+      </embed>
+    </object>
+  {% endif %}
+  {% endfor %}
+
+  {{ content }}
+</div>

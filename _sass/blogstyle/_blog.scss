@@ -1,0 +1,84 @@
+.Latest-Posts-Title {
+  text-align: center;
+}
+.post-preview {
+  .post-link {
+    color: #1a222c;
+    display: block;
+    text-decoration: none;
+    transition: all 0.01s ease-in;
+      &:hover {color: #0085a1;}
+      &:active {color:#0085a1;}
+
+    .post-title {
+      font-size: 30px;
+      font-weight: bold;
+      margin-top: 20px;
+      margin-bottom: 0 auto;
+      }
+      @media only screen and (min-width: 550px) {
+        font-size: 30px;
+        }
+    .post-subtitle {
+      margin: 0 auto;
+      font-weight: 300;
+      }
+      @media only screen and (min-width: 550px) {
+        font-size: 20px;
+        }
+      }
+    }
+.post-meta {
+  color: #808080;
+  font-size: 15px;
+  font-style: italic;
+  margin-top: 0;
+  @media only screen and (min-width:550px){
+    font-size: 15px;
+    }
+  }
+.post-tags {
+  color: #1a222c;
+  .tag-links {
+    color: inherit;
+    text-decoration: none;
+    margin: 5px;
+    transition: all .01s linear;
+      &:hover  {
+        color: #0085a1;
+        text-decoration: underline;
+        }
+      &:active {
+        color: #0085a1;
+        text-decoration: underline;
+        }
+      }
+    }
+
+.archive-list {
+  color: #1a222c;
+  .archived-link {
+    color: inherit;
+    text-decoration: none;
+    transition: all .01s linear;
+      &:hover  {
+        color: #0085a1;
+        text-decoration: underline;
+        }
+      &:active {
+        color: #0085a1;
+        text-decoration: underline;
+        }
+      }
+    }
+
+.post-container {
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+    color:#1a222c;
+    @media (min-width: 550px) {
+      width: 65%;
+      }
+    }

@@ -1,0 +1,16 @@
+<nav class="nav">
+  <ul class="subnavmenu">
+    {% for item in site.data.portfolio-nav %}
+    {% if item.url contains 'http' %}
+        {% assign domain = '' %}
+        {% else %}
+        {% assign domain = site.url %}
+    {% endif %}
+      <li class="subnavitem">
+        <a class="subnavlink" href="{{ domain }}{{ item.url }}">
+              {{ item.title }}
+        </a>
+      </li>
+    {% endfor %}
+  </ul>
+</nav>

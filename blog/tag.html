@@ -1,0 +1,76 @@
+---
+layout:   default
+title:    Tags
+---
+{% include nav-blog.html %}
+
+{% comment %}
+Tag and category method developed by Zhihao Li // codinfox
+tutorial at https://codinfox.github.io/dev/2015/03/06/use-tags-and-categories-in-your-jekyll-based-github-pages/
+or https://github.com/codinfox/codinfox-lanyon/tree/master/blog
+
+Here we generate all the tags.
+{% endcomment %}
+
+{% assign rawtags = "" %}
+{% for post in site.posts %}
+{% assign ttags = post.tags | join:'|' | append:'|' %}
+{% assign rawtags = rawtags | append:ttags %}
+{% endfor %}
+
+{% assign rawtags = rawtags | split:'|' | sort %}
+
+{% assign tags = "" %}
+
+{% for tag in rawtags %}
+{% if tag != "" %}
+
+{% if tags == "" %}
+{% assign tags = tag | split:'|' %}
+{% endif %}
+
+{% unless tags contains tag %}
+{% assign tags = tags | join:'|' | append:'|' | append:tag | split:'|' %}
+{% endunless %}
+{% endif %}
+{% endfor %}
+
+<div class="container">
+  <h1 class="page-title">
+    <a class="blog-link" href="/blog">Blog</a> | {{ page.title }}
+  </h1>
+  <br/>
+
+  <div class="indexed-posts">
+  <p>
+  {% for tag in tags %}
+    <a href="#{{ tag | slugify }}" class="tag-mark">
+      {{ tag }}
+    </a> &nbsp;&nbsp;
+  {% endfor %}
+
+  {% for tag in tags %}
+  <h2 id="{{ tag | slugify }}">{{ tag | capitalize}}</h2>
+  <ul class="category-list">
+    {% for post in site.posts %}
+    {% if post.tags contains tag %}
+    <li>
+        <a class="post-mark" href="{{ post.url }}">
+          {{ post.title }}
+        </a>
+        <div class="post-date">
+          Posted {{ post.date | date_to_string }} by {{ post.author }}
+        </div>
+        <div class="tag-mark-list">
+          {% for tag in post.tags %}
+            <a class="tag-mark" href="/blog/tag/#{{ tag | slugify }}">{{ tag }}</a>
+          {% endfor %}
+          <hr>
+        </div>
+    </li>
+    {% endif %}
+    {% endfor %}
+  </ul>
+  {% endfor %}
+  </div>
+</div>
