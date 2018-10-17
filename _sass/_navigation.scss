@@ -24,19 +24,17 @@ ul.navmenu {
         font-size:20px;
         }
       transition:all .7s;
-          &:hover {
-            color:#1a222c;
-            background:#FFF;
-          }
-          &:active {
-            color:#1a222c;
-            background:#FFF;
-            @media only screen and (min-width:550px){
-              color:inherit
-            }
-          }
+      &:hover {
+        color:#b0b0b0;
+      }
+      &:active {
+        color:#b0b0b0;
+        @media only screen and (min-width:550px){
+        font-size:20px;
         }
       }
+    }
+  }
 
 
 ul.subnavmenu {
@@ -45,7 +43,7 @@ ul.subnavmenu {
   color:#fff;
   list-style:none;
   display:block;
-  text-align:center;
+  text-align: center;
 }
   li.subnavitem {
       margin:5px;
@@ -55,14 +53,16 @@ ul.subnavmenu {
         text-decoration:none;
         font-size:20px;
         transition:all .7s;
-          &:hover {
-            color:#b0b0b0;
-          }
-          &:active {
-            color:#b0b0b0;
-            @media only screen and (min-width:550px){
-            font-size:20px;
-            }
+        &:hover {
+          color:#1a222c;
+          background:#FFF;
+        }
+        &:active {
+          color:#1a222c;
+          background:#FFF;
+          @media only screen and (min-width:550px){
+            color:inherit
           }
         }
       }
+    }
